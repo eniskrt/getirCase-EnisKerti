@@ -44,38 +44,35 @@ public class GetirStepDefinition {
 
     @Given("Click on the Fit&Form category.")
     public void clickOnTheFitFormCategory() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
     }
-    @Then("Verify that the Fit&Form has opened.")
-    public void verify_that_the_fit_form_has_opened() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @And("Verify that the Fit&Form has opened.")
+    public void verifyFitAndFormHasOpened() {
+
     }
-    @When("Verify that the basket is empty.")
-    public void verify_that_the_basket_is_empty() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Then("Verify that the basket is empty.")
+    public void verifyTheBasketIsEmpty() {
+
     }
-    @When("Click on the Granola category in the left category menu.")
-    public void click_on_the_granola_category_in_the_left_category_menu() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @And("Click on the Granola category in the left category menu.")
+    public void clickOnTheGranolaSubcategory() {
+
     }
     @Then("Verify that Granola section has opened.")
-    public void verify_that_granola_section_has_opened() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void verifyGranolaSubcategoryHasOpened() {
+
     }
-    @Then("Click on the most expensive product in the Granola subcategory.")
-    public void click_on_the_most_expensive_product_in_the_granola_subcategory() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @And("Click on the most expensive product in the Granola subcategory.")
+    public void clickOnTheMostExpensiveProductInTheGranolaSubcategory() {
+
     }
     @Then("Verify that the product price on the product details page matches the price displayed in the category.")
-    public void verify_that_the_product_price_on_the_product_details_page_matches_the_price_displayed_in_the_category() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void verifyProductPricesIsEquals() {
+
+    }
+    @And("Quit the browser.")
+    public void quitBrowserAgain() {
+        Driver.quitDriver();
     }
 
 }
