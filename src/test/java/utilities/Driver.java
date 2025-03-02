@@ -6,14 +6,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-
 import java.time.Duration;
 
 public class Driver {
 
     public static WebDriver driver;
     private Driver(){
-
+        /*
+        To prevent other classes from creating an object of the Driver class, the Singleton pattern was used.
+        This pattern restricts object creation by making the constructor private.
+         */
     }
 
     public static WebDriver getDriver() {
@@ -39,7 +41,7 @@ public class Driver {
                     driver = new SafariDriver();
                     break;
 
-                default:
+                case "chrome":
 
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();

@@ -4,13 +4,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
-
 import java.util.List;
 
 public class GetirPage {
 
     public GetirPage() {
-
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -24,15 +22,15 @@ public class GetirPage {
 
     //EmptyCartText
     @FindBy(xpath = "((//span[@data-testid='text'])//span[@data-testid='text'])[18]")
-    public static WebElement emptyCartText;
+    public WebElement emptyCartText;
 
     //GranolaSubCategoryButton
     @FindBy(xpath = "(//div[@data-testid='link'])[21]//a/span")
-    public static WebElement granolaSubCategoryButton;
+    public WebElement granolaSubCategoryButton;
 
     //GranolaSubCategoryTitle
     @FindBy(xpath = "(//h5[@data-testid='title'])[5]")
-    public static WebElement granolaSubCategoryTitle;
+    public WebElement granolaSubCategoryTitle;
 
     //GranolaSubCategoryProductList
     @FindBy(xpath = "(//div[@data-testid='card'])[6]//article")
