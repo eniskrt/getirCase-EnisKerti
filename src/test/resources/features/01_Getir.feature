@@ -15,6 +15,6 @@
       When Verify that the basket is empty.
       And Click on the Granola category in the left category menu.
       Then Verify that Granola section has opened.
-      And Click on the most expensive product in the Granola subcategory.
+      And Click on one of the most expensive product in the Granola subcategory.
       Then Verify that the product price on the product details page matches the price displayed in the category.
       And Quit the browser again.

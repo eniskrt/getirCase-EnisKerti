@@ -93,7 +93,7 @@ public class GetirStepDefinition {
         Assert.assertTrue(actualText.contains(expectedText));
     }
 
-    @And("Click on the most expensive product in the Granola subcategory.")
+    @And("Click on one of the most expensive product in the Granola subcategory.")
     public void clickOnTheMostExpensiveProductInTheGranolaSubcategory() {
         List<Double> priceList = new ArrayList<>();
         Map<Double, Integer> indexOfProductPrice = new HashMap<>();
